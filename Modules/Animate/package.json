@@ -1,0 +1,6 @@
+{
+	"name": "animate",
+	"version": "1.0.0",
+	"main": "index.html",
+	"scripts": { "start": "start %npm_package_main%" }
+}

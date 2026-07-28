@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Bubbles BG</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Assets/Styles/index.css">
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      async function main() {
+        const view = new Container(document.getElementById('canvas'));
+
+        window.addEventListener('resize', () => { view.resize(window); });
+        
+        const bubbles = new Scene(view);
+
+        await bubbles.animate();
+      }
+
+      // Create modules for Vector, Color, Dimensions, Container, Scene, Shape, & Circle
+    </script>
+  </body>
+</html>
